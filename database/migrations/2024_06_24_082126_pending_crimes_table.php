@@ -21,7 +21,7 @@ return new class extends Migration
             $table->float('latitude');
             $table->string('address');
             $table->string('crime_type');
-            $table->foreignId('reportedby_user_id')->constrained('username');
+            $table->foreignId('reportedby_user_id')->constrained('users');
         });
     }
 
